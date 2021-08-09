@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
                     Gb = event.values[1];
                     Gc = event.values[2];
 
-                    if (Aa >= 1f || Aa <= -1f || Ab >= 10f || Ab < 9f ||
-                        Ga >= 0.5f || Ga <= -0.5f || Gc >= 0.5f || Gc <= -0.5f) {
+//                    if (Aa >= 1f || Aa <= -1f || Ab >= 10f || Ab < 9f ||
+//                        Ga >= 0.5f || Ga <= -0.5f || Gc >= 0.5f || Gc <= -0.5f) {
                         date = dateFormat.format(Calendar.getInstance().getTime());
                         output = date + "," + LocationService.getCoordinates() + "," + Aa + "," + Ab + "," + Ac + "," + Ga + "," + Gb + "," + Gc + "\n";
 
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         }
-                    }
+//                    }
 
                     //Log.i("", output);
                 }
